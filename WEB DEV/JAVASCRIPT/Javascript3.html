@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string Functions</title>
+</head>
+<body>
+    <h2>Welcome to the javascript tutorial</h2>
+    <p>Today we will learn about strings functions</p>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // Last ocurence of a substring
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        // substring from a string
+        // var substr = str.slice(1,7);
+        // slice can have index that have both negative and positive values
+        // console.log(substr)
+        // var substr = str.substring(1,7);
+        // console.log(substr);
+        // substring can only take index which have positive values
+        var substr1 = str.substr(1,9);
+        // substr(1,9) -> This means that it will print letters from index 1 to the index 8 as the length is 7 here so last index to print is 8.this means that inside bracket first it tells about from which index the letter should print and after comma it tells of what length it have to print(remember it does not tell the index of the last letter). 
+        console.log(substr1);
+
+        // var replaced = str.replace('string','Ram');
+        // console.log(str);
+        // console.log(replaced); 
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newString = str.concat('New String');
+        // concat -> This will add the the bracket portion to the str contains.
+        // But it is better to use + for add two strings instead of concat.
+        console.log(newString);
+
+        var strWithWhitespaces = "     this contains        whitespaces        ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+        // trim -> this removes the space that is available before and after in the string content.this does not removes the space between the words inside the string content.
+        
+    </script>
+</body>
+</html>

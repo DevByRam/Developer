@@ -1,0 +1,60 @@
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: rgb(226, 173, 14)
+}
+
+button {
+    color: red;
+    /* This will change the color of the fonts or foreground */
+    background-color: rgb(9, 213, 40);
+    /* This will change the background of the button */
+}
+
+body {
+    background-color: #BFEA7C;
+}
+
+/* This will change the background color of the body */
+
+* {
+    color: rgb(164, 40, 199);
+    /* This is a universal selector.This property will change the color of all the fonts. */
+}
+
+#Id1 {
+    color: #008DDA;
+}
+
+.class1 {
+    color: magenta
+}
+
+.text {
+    text-align: end;
+}
+
+#text1 {
+    text-align: center;
+}
+
+.decoration {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#decorat
+{
+    text-align: right;
+    text-decoration: overline;
+}
+.name
+{
+    text-align: center;
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <ul>
+            <li>Mango</li>
+            <ul>
+                <li>color : yellow</li>
+                <li>season : summers</li>
+            </ul>
+            <li>Apple</li>
+            <ul>
+                <li>color : red</li>
+                <li>season : winters</li>
+            </ul>
+            <li>Litchi</li>
+        </ul>
+
+         <ol> 
+                <li>Mango</li>
+                <ol>
+                    <li>color : yellow</li>
+                    <li>season : summers</li>
+                </ol>
+                <li>Apple</li>
+                <ol>
+                    <li>color : red</li>
+                    <li>season : winters</li>
+                </ol>
+                <li>Litchi</li>
+        </ol>
+    </main>
+
+
+    <table>
+        <thead>
+            <caption>
+                STUDENTS DATA
+            </caption>
+            <tr> table row 
+                 <th> table header
+                    Name
+                </th>
+                <th>
+                    Roll No.
+                </th> 
+                <th colspan="2">
+                    INFORMATION
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                Ram krishna
+            </td>
+            <td>
+                BT23CSE026
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Yash
+            </td>
+            <td>
+                BT23CSE019
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Saksham
+            </td>
+            <td>
+                BT23CSE004
+            </td>
+        </tr>
+    </tbody>
+    </table>
+
+    <form action="action.php">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+
+        <input type="radio" value="class XI" name="class">class XI
+        <!-- VVIP 
+            if we select any radio button(suppose we select class XI)the stored information would be that one which is written in value that is class XI.if it is written class X instead of class XI then the stored value would be classXI even the radio button shows class XI.
+        -->
+        <!-- <input type="radio" value="class X" name="class">class XI -->
+        <input type="radio" value="class XII" name="class">class XII
+    </form>
+    <h2> This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="Name">Name</label>
+        <div>
+            <input type="text" name="myName" id="Name">
+        </div>
+        <!-- inside label,input inside for="" mst be the same taken as input in id=""-->
+        <!-- label is used so that when we click on the text that we need to input inside the box can be automatically start taking input by typing.suppose in this if we click on the Name that is seeing on the browser form the box automatically gets ready for taking input.-->
+        <br>
+        <div>
+            Role : <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Bonus : <input type="number" name="MyBonus">
+        </div>
+        <br>
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            ARE YOU ELIGIBLE? : <input type="checkbox" name="MyEligibility">
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" value="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself : <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for-="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="Creta">CRETA</option>
+                <option value="kia seltos" selected>SELTOS</option>
+                <option value="Brezza">BREZZA</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="Reset" value="Reset Now">
+        </div>
+        
+    </form>
+</body>
+</html>

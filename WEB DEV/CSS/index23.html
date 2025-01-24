@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box
+        {
+            font-size: 45px;
+            text-align: center;
+            background-color: rgb(27, 49, 214);
+            color: white;
+            display: none;
+        }
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+            }
+        }
+
+        @media (max-width:500px) and (min-width : 300px){
+            #box-2{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mai ek phone hoon</div>
+    <div class="box" id="box-2">Mai ek Tablet hoon</div>
+    <div class="box" id="box-3">Mai ek computer hoon</div>
+    <div class="box" id="box-4">Mai ek widescreen computer hoon</div>
+</body>
+</html>

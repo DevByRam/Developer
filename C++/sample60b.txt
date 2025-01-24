@@ -1,0 +1,2 @@
+This is coming from the file
+This is the new line entered to check whether it get this next line or not

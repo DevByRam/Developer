@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 4px solid red;
+            background-color: rgb(76, 238, 22);
+            padding: 35px;
+            margin: 35px auto;
+            width: 600px;
+            font-size: larger;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .btn:visited{
+            background-color: blueviolet;
+        }
+        a.active{
+            background-color: azure;
+        }
+        .btn:hover{
+            color: rgb(38, 149, 239);
+            background-color: rgb(200, 238, 12);
+            border: 3px solid black;
+        }
+        .btn{
+            font-family: cursive;
+            font-weight: bold;
+            background-color: rgb(20, 220, 97);
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" class="cont1">
+        <h3>This is my heading.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio hic, obcaecati ratione tenetur fugiat voluptate officia ea sapiente accusantium, iure itaque eligendi nulla! Libero similique cumque dicta excepturi ullam porro doloribus aperiam suscipit iure tempora.</p>
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

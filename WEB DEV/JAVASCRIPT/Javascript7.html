@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacting using alert,confirm and prompt</title>
+</head>
+<body>
+    <div class="container">This is a page </div>
+    <script>
+        // Alert in in-browser javascript - Does not return anything means can not print like by using console.log that is 
+        // let a = alert("This is message from pc");
+        // console.log(a);
+        // so it will give output as undefined
+        // alert("This is a message from pc");
+
+        // let name = prompt("What is your name","Guest");
+        // console.log(name);
+
+        let deletepost = confirm("Do you really want to delete this post?");
+        // console.log(deletepost);
+        if(deletepost)
+        {
+            console.log("Your post has been deleted successfully");
+        }
+        else{
+            console.log("Your post has not been deleted");
+        }
+
+        let ask = prompt("What is your age?");
+        if(ask>18)
+        {
+            // console.log("You are allowed to enter the club");
+            document.write("You are allowed to enter the club");
+        }
+        else{
+            console.log("You are not allowed to enter the club");
+        }
+    </script>
+</body>
+</html>

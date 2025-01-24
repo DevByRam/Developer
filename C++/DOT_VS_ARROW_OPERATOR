@@ -1,0 +1,115 @@
+Dot Operator in C++
+
+The dot operator (.) is used to access the members of an object or struct when working directly with objects or references. It is applied to the actual object directly to access variables, functions, and other class members.
+
+Syntax to Use Dot Operator
+Object.member
+Here,
+
+object is an instance of the class.
+member is the name of the variable or function of the object that we want to access.
+Note: The dot operator can only be used with actual object instances, not pointers.
+
+// C++ program to use dot operator in C++
+
+#include <iostream>
+using namespace std;
+
+// define a class MyClass
+class MyClass {
+public:
+    int num;
+    void increase() { num += 5; }
+};
+
+int main()
+{
+
+    // create object of MyClass
+    MyClass obj;
+
+    // access variable using dot operator
+    obj.num = 5;
+
+    // access member function using dot operator
+    obj.increase();
+
+    // printing the value of num
+    cout << "Number is: " << obj.num;
+}
+
+// C++ program to use dot operator in C++
+
+#include <iostream>
+using namespace std;
+
+// define a class MyClass
+class MyClass {
+public:
+    int num;
+    void increase() { num += 5; }
+};
+
+int main()
+{
+
+    // create object of MyClass
+    MyClass obj;
+
+    // access variable using dot operator
+    obj.num = 5;
+
+    // access member function using dot operator
+    obj.increase();
+
+    // printing the value of num
+    cout << "Number is: " << obj.num;
+}
+
+
+
+Arrow Operator
+
+The arrow operator (->) is used to access the members of an object or struct when working with pointer to an object. This operator dereferences the pointer and access the member of the object it points to simultaneously, meaning ptr->member is same as (*ptr).member. It is commonly used when working with dynamically created objects or the objects that are accessible by pointers.
+
+Syntax to Use Arrow Operator
+ptr->member
+Here,
+
+ptr is a pointer to an object.
+member is the name of the variable or function of the object that we want to access.
+
+// C++ program to use arrow operator in C++
+
+#include <iostream>
+using namespace std;
+
+// define a class MyClass
+class MyClass {
+public:
+    int num;
+    void increase() { num += 5; }
+};
+
+int main()
+{
+
+    // create pointer to object of MyClass
+    MyClass* ptr = new MyClass(); // Pointer to a Car object
+
+    // access variable using arrow operator
+    ptr->num = 10;
+
+    // access member function using arrow operator
+    ptr->increase();
+
+    // printing the value of num
+    cout << "Number is: " << ptr->num << endl;
+
+    delete ptr; // delete allocated memory
+}
+
+Output
+Number is: 15
+
+In conclusion, the choice between the dot operator and the arrow operator in C++ depends on whether we are working directly with an object or a pointer to an object. We should prefer to use dot operator when we have an object or a reference, while the arrow operator is preferred when we have a pointer. Understanding the key differences between these two operators is important for writing clear and efficient C++ code.

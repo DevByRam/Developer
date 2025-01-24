@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Mass Index</title>
+  </head>
+
+  <body>
+    <h2>How to calculate BMI i.e. Body Mass Index of the body</h2>
+    <script>
+      function calculateBmi() {
+        let weight = prompt("Enter user weight in kilograms");
+        let height = prompt("Enter user height in metres");
+
+        if (isNaN(weight) || isNaN(height)) {
+          alert("Please enter valid numbers of weight and height.");
+          return;
+        }
+
+        let bmi = weight / (height * height);
+
+        let bmiRounded = bmi.toFixed(2);
+
+        let interpretation;
+        if (bmiRounded < 18.5) {
+          interpretation = "Underweight";
+        } else if (bmiRounded >= 18.5 && bmiRounded <= 24.9) {
+          interpretation = "Normal Weight";
+        } else if (bmiRounded >= 25 && bmiRounded <= 29.9) {
+          interpretation = "Overweight";
+        } else {
+          interpretation = "Obese";
+        }
+        alert(
+          `Your BMI is ${bmiRounded}. You are classified as ${interpretation}.`
+        );
+      }
+      calculateBmi();
+    </script>
+  </body>
+</html>

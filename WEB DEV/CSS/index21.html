@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEXBOX TUTORIAL</title>
+  </head>
+  <style>
+    .container {
+      height: 544px;
+      width: 100%;
+      border: 2px solid black;
+      border-radius: 6px;
+      /* Initialise the container as a flex box */
+      display: flex;
+      /* Flex properties for flex container */
+      flex-direction: row;
+      /* Default value of flex-direction is Row so no need to write flex-direction : row; */
+      /* flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse; */
+        flex-wrap: wrap;
+        /* Default value is considered as nowrap */
+        /* flex-flow:row-reverse wrap; */
+        /* By this,both above properties(that is flex-direction and flex-wrap) can be used by this single element */
+        /* justify-content: center;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around; */
+        /* align-items: center;
+        align-items: flex-end;
+        align-items: flex-start; */
+        align-items: stretch;
+    }
+    .item {
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+      border: 2px solid rgb(75, 217, 53);
+      margin: 7px;
+      padding: 3px;
+    }
+    #item-1 {
+      /* Flex properties for  flex item */
+      /* higher the order,later it shows up in the container */
+      order : 2;
+      flex-grow: 2;
+      /* This will grow item-1 flexbox twice the other flexbox on enlarging.*/
+    }
+    #item-2 {
+      flex-grow: 3;
+      flex-shrink: 2;
+      /* This will shrink the item-2 flexbox twice than the other flexboxes on shrinking. matlab item-2 flexbox jyada shrink hote hue dikhega.*/
+      flex-basis: 230px;
+      /* when flex-direction is set to row flex-basis: will control width */
+      /* when flex-direction is set to column flex-basis: will control height*/
+      align-self: flex-end;
+    }
+    #item-3 {
+      order: 40;
+      align-self: flex-start;
+      align-self: center;
+    }
+  </style>
+  <body>
+    <h1>This is FLEXBOX tutuorial.</h1>
+    <div class="container">
+      <div class="item" id="item-1">First Box</div>
+      <div class="item" id="item-2">Second Box</div>
+      <div class="item" id="item-3">Third Box</div>
+      <div class="item" id="item-4">Fourth Box</div>
+  </body>
+</html>

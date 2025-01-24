@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  padding: 10px 4%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 150px;
+  cursor: pointer;
+}
+nav .menu-img {
+  width: 50px;
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+  margin-right: 60px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  padding: 10px;
+}
+
+nav ul li a::before {
+  content: "";
+  width: 100%;
+  height: 0; /* Start with no height */
+  background: #d9f688;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: -1; /* Ensure it appears behind the text */
+  transition: height 0.4s ease-in-out; /* Smooth transition */
+}
+
+nav ul li a:hover::before {
+  height: 73px; /* Adjust height to fit your design */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  flex-basis: 50%;
+  position: relative;
+}
+.feature-img {
+  width: 90%;
+  height: 90%;
+  margin-top: 7px;
+}
+
+.thumbnail-img {
+  width: 280px;
+  position: absolute;
+  bottom: 35px;
+  left: -40px;
+  border-radius: 8px;
+  box-shadow: 5px 8px 10px rgb(210, 236, 39);
+}
+
+.col h1 {
+  margin-top: 180px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.col a {
+  text-decoration: none;
+  padding: 18px 50px;
+  border-radius: 30px;
+  background: #beee3c;
+  display: inline-block;
+  color: #000;
+  font-weight: 550;
+  margin-top: 70px;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}

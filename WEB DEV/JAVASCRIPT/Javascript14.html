@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in Javascript</title>
+</head>
+<body>
+    <div>
+        <h2>This math Object tutuorial</h2>
+    </div>
+    <script>
+        let  m = Math;
+        console.log(m);
+
+        // Printing the constrants of Math Object
+        console.log("The value of Math.E is ", Math.E);
+        console.log("The value of Math.PI is ", Math.PI);
+        console.log("The value of Math.LN2 is ", Math.LN2);
+
+        // Printing the Function from Math Object
+        let a = 34.6458;
+        let b = 83.26;
+
+        console.log("The value of a and b is ", a, b);
+        console.log("The value of a and b rounded is ", Math.round(a),Math.round(b));
+
+        console.log("3 raised to the power of 5 ", Math.pow(3,5));
+        
+        console.log("square root of 64 is ",Math.sqrt(64));
+
+        // ceil and floor
+        console.log("5.8 rounded up to nearest integer is ", Math.ceil(5.8));
+        console.log("5.8 rounded down to nearest integer is ", Math.floor(5.8));
+
+        // absolute function
+        console.log("Absolute value of 5.66 is ",Math.abs(5.66));
+        console.log("Absolute value of -5.66 is ",Math.abs(-5.66));
+
+        // Trigonometric functions
+        console.log("Value of sin(pi/2)",Math.sin(Math.PI/2));
+
+        // Min and max functions
+        console.log("Minimum value of 4,5,6,3 is",Math.min(4,5,6,3));
+        console.log("Maximum value of 15,12,24,10 is",Math.max(15,12,24,10));
+
+        // Genearting a random number
+        let r = Math.random();
+        // Random number b/w (a, b) = a + (b-a)*Math.random()
+        let a80 = 80;
+        let b1 = 100;
+        let r80_100 = a80 + (b1 - a80)*Math.random();
+        console.log("The random number is ",r);
+        console.log("The random number is ",r80_100);
+    </script>
+</body>
+</html>

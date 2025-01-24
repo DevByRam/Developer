@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CONTACT.css" />
+    <link
+      rel="shortcut icon"
+      href="Contact Logo_Favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // JavaScript to restrict phone number input to numbers only
+      function validatePhoneNumber(input) {
+        input.value = input.value.replace(/[^0-9]/g, ""); // Remove any non-numeric characters
+      }
+    </script>
+  </head>
+  <body>
+    <div class="ContactUs">
+      <div class="Title">
+        <h2>Get In Touch And Share Your Feedback</h2>
+      </div>
+      <div class="box">
+        <!-- Contact Form Section -->
+        <div class="form">
+          <h3>Contact Form</h3>
+          <form action="#">
+            <input type="text" placeholder="Your Full Name" />
+            <input type="email" placeholder="Your Email" />
+            <input
+              type="tel"
+              placeholder="Your Phone Number"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              required
+              oninput="validatePhoneNumber(this)"
+            />
+            <textarea placeholder="Your Message/Your Feedback"></textarea>
+            <button type="submit">Submit Your Response</button>
+          </form>
+        </div>
+
+        <!-- Information Section -->
+        <div class="info">
+          <h3>Our Information</h3>
+          <p><i class="fas fa-envelope"></i>bt23cse026@iiitn.ac.in</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 05 Vaishno Mansion 2nd Floor
+            R.S. Puram Near Vivekanand Nidom, New City Centre, Gwl.(M.P).
+          </p>
+          <p><i class="fas fa-phone-alt"></i> xxxxx xxxxx</p>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="social-icon instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="social-icon linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              class="social-icon twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              class="social-icon whatsapp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map">
+          <h3>Map</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14017.606937406356!2d77.2167213!3d28.6304208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd34dbbfaa61%3A0x5ab4d133a56f8025!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001%2C%20India!5e0!3m2!1sen!2sin!4v1700169848398!5m2!1sen!2sin"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

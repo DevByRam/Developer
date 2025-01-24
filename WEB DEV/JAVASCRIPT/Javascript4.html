@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope,If-else Conditionals & Switch Case in Javascript</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <!-- use div>ul>li{Item-$}*7 -->
+    <script>
+        // var string1 = "This is a string";
+        // var string1 = "This is a string2";
+        // console.log(string1);
+        // let a = "u";
+        // {
+        //     // jesse he is block se bahar aayege to is variable ka koi matlab nhi hoga.
+        //     // it is good to use let instead of var
+        //     // Block level ka scope hota he
+        //     let a = "u6";
+        //     // here we define same var a with different value,let print a and see what will be the output 
+        //     console.log(a);
+        //     // you will observed that u6 is the outcome
+        // }
+        // // But same thing will be tried outside the box then the outcome will be u.
+        // console.log(a);
+
+        // const a = "This can not be changed";
+        // a = "I want to change this. This can not be changed";
+        // console.log(a);
+        // This will show error in console 
+
+        let age = 29;
+        if(age>18)
+        {
+            console.log("You can drink water");
+        }
+        else if(age == 15)
+        {
+            console.log("age is 15");
+        }
+        else{
+            console.log("You can drink cold drink");
+        }
+        // similarly switch can be used as used in c
+        
+    </script>
+</body>
+</html>

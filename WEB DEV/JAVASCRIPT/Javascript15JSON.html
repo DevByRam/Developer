@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <h2>
+            Today we will learn about JSON.Let's begin</div>
+        </h2>
+    <script>
+        let jsonObj = {
+            name : "RAM",
+            channel : "CWH",
+            friend : "Dherya",
+            food : "Food that is made by Mummy because my mummy's hands have magic "
+        }
+        console.log(jsonObj);
+        let myjsonStr = JSON.stringify(jsonObj);
+        console.log(myjsonStr);
+
+        myjsonStr = myjsonStr.replace("RAM",
+        "AMAN");
+        // myjsonStr = myjsonStr.replace('RAM','AMAN');  we can use this instaed of above line 24.
+        console.log(myjsonStr)
+
+        newJsonObj = JSON.parse(myjsonStr);
+        // parse -> The JSON.parse() static method parses a JSON string, constructing the JavaScript value or object described by the string. An optional reviver function can be provided to perform a transformation on the resulting object before it is returned.
+        console.log(newJsonObj);
+    </script>
+</body>
+</html>

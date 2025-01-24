@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iostream": "cpp"
+<<<<<<< HEAD
+    }
+=======
+    },
+    "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe"
+>>>>>>> 84cfbae (New Files)
+}
